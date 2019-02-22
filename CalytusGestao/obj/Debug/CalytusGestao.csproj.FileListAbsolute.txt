@@ -1,0 +1,9 @@
+c:\users\warley\documents\visual studio 2017\Projects\CalytusGestao\CalytusGestao\bin\Debug\CalytusGestao.exe.config
+c:\users\warley\documents\visual studio 2017\Projects\CalytusGestao\CalytusGestao\bin\Debug\CalytusGestao.exe
+c:\users\warley\documents\visual studio 2017\Projects\CalytusGestao\CalytusGestao\bin\Debug\CalytusGestao.pdb
+c:\users\warley\documents\visual studio 2017\Projects\CalytusGestao\CalytusGestao\obj\Debug\CalytusGestao.csprojResolveAssemblyReference.cache
+c:\users\warley\documents\visual studio 2017\Projects\CalytusGestao\CalytusGestao\obj\Debug\CalytusGestao.Properties.Resources.resources
+c:\users\warley\documents\visual studio 2017\Projects\CalytusGestao\CalytusGestao\obj\Debug\CalytusGestao.csproj.GenerateResource.Cache
+c:\users\warley\documents\visual studio 2017\Projects\CalytusGestao\CalytusGestao\obj\Debug\CalytusGestao.exe
+c:\users\warley\documents\visual studio 2017\Projects\CalytusGestao\CalytusGestao\obj\Debug\CalytusGestao.pdb
+c:\users\warley\documents\visual studio 2017\Projects\CalytusGestao\CalytusGestao\obj\Debug\CalytusGestao.View.Login.resources

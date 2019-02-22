@@ -1,0 +1,8 @@
+C:\Users\Warley\documents\visual studio 2017\Projects\CalytusGestao\CalytusGestao.Controller\bin\Release\CalytusGestao.Controller.dll
+C:\Users\Warley\documents\visual studio 2017\Projects\CalytusGestao\CalytusGestao.Controller\bin\Release\CalytusGestao.Controller.pdb
+C:\Users\Warley\documents\visual studio 2017\Projects\CalytusGestao\CalytusGestao.Controller\bin\Release\CalytusGestao.Model.dll
+C:\Users\Warley\documents\visual studio 2017\Projects\CalytusGestao\CalytusGestao.Controller\bin\Release\system.data.sqlite.dll
+C:\Users\Warley\documents\visual studio 2017\Projects\CalytusGestao\CalytusGestao.Controller\bin\Release\CalytusGestao.Model.pdb
+C:\Users\Warley\documents\visual studio 2017\Projects\CalytusGestao\CalytusGestao.Controller\obj\Release\CalytusGestao.Controller.csprojResolveAssemblyReference.cache
+C:\Users\Warley\documents\visual studio 2017\Projects\CalytusGestao\CalytusGestao.Controller\obj\Release\CalytusGestao.Controller.dll
+C:\Users\Warley\documents\visual studio 2017\Projects\CalytusGestao\CalytusGestao.Controller\obj\Release\CalytusGestao.Controller.pdb

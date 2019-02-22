@@ -1,0 +1,436 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{8A327C9A-9196-47C5-B61E-EFA890D098C2}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>CalytusGestao</RootNamespace>
+    <AssemblyName>CalytusGestao</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>logoCalytusIcon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="system.data.sqlite, Version=1.0.74.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>G:\PROGRAMAS\BANCO DE DADOS\SQLITE\DLL 2012\system.data.sqlite.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="View\AnaliseViews\CadastroAnalise.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\AnaliseViews\CadastroAnalise.Designer.cs">
+      <DependentUpon>CadastroAnalise.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\AnaliseViews\ConsultaAnalise.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\AnaliseViews\ConsultaAnalise.Designer.cs">
+      <DependentUpon>ConsultaAnalise.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\AnaliseViews\InfAnalise.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\AnaliseViews\InfAnalise.Designer.cs">
+      <DependentUpon>InfAnalise.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\AnotacaoViews\AbreEditaAnotacao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\AnotacaoViews\AbreEditaAnotacao.Designer.cs">
+      <DependentUpon>AbreEditaAnotacao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\AnotacaoViews\CadastroAnotacao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\AnotacaoViews\CadastroAnotacao.Designer.cs">
+      <DependentUpon>CadastroAnotacao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\AnotacaoViews\ConsultaAnotacao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\AnotacaoViews\ConsultaAnotacao.Designer.cs">
+      <DependentUpon>ConsultaAnotacao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\DoencaViews\AbreEditaDoenca.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\DoencaViews\AbreEditaDoenca.Designer.cs">
+      <DependentUpon>AbreEditaDoenca.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\DoencaViews\AlteraLocais.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\DoencaViews\AlteraLocais.Designer.cs">
+      <DependentUpon>AlteraLocais.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\DoencaViews\CadastroDoenca.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\DoencaViews\CadastroDoenca.Designer.cs">
+      <DependentUpon>CadastroDoenca.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\DoencaViews\ConsultaDoenca.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\DoencaViews\ConsultaDoenca.Designer.cs">
+      <DependentUpon>ConsultaDoenca.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\DoencaViews\EscolhaLocais.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\DoencaViews\EscolhaLocais.Designer.cs">
+      <DependentUpon>EscolhaLocais.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\EspeciesViews\AbreEditaEspecie.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\EspeciesViews\AbreEditaEspecie.Designer.cs">
+      <DependentUpon>AbreEditaEspecie.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\EspeciesViews\AlteraUtilidades.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\EspeciesViews\AlteraUtilidades.Designer.cs">
+      <DependentUpon>AlteraUtilidades.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\EspeciesViews\CadastroEspecie.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\EspeciesViews\CadastroEspecie.Designer.cs">
+      <DependentUpon>CadastroEspecie.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\EspeciesViews\ConsultaEspecies.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\EspeciesViews\ConsultaEspecies.Designer.cs">
+      <DependentUpon>ConsultaEspecies.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\EspeciesViews\EscolhaUtilidades.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\EspeciesViews\EscolhaUtilidades.Designer.cs">
+      <DependentUpon>EscolhaUtilidades.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\FerramentasViews\Adubacao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\FerramentasViews\Adubacao.Designer.cs">
+      <DependentUpon>Adubacao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\FerramentasViews\Calagem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\FerramentasViews\Calagem.Designer.cs">
+      <DependentUpon>Calagem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\MenuPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\MenuPrincipal.Designer.cs">
+      <DependentUpon>MenuPrincipal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\PlantacaoViews\AdicionaAtividade.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\PlantacaoViews\AdicionaAtividade.Designer.cs">
+      <DependentUpon>AdicionaAtividade.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\PlantacaoViews\AdicionaEspecie.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\PlantacaoViews\AdicionaEspecie.Designer.cs">
+      <DependentUpon>AdicionaEspecie.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\PlantacaoViews\AlteraPlantacao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\PlantacaoViews\AlteraPlantacao.Designer.cs">
+      <DependentUpon>AlteraPlantacao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\PlantacaoViews\CadastroPlantacao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\PlantacaoViews\CadastroPlantacao.Designer.cs">
+      <DependentUpon>CadastroPlantacao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\PlantacaoViews\ConsultaAtividade.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\PlantacaoViews\ConsultaAtividade.Designer.cs">
+      <DependentUpon>ConsultaAtividade.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\PlantacaoViews\ConsultaEspecies2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\PlantacaoViews\ConsultaEspecies2.Designer.cs">
+      <DependentUpon>ConsultaEspecies2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\PlantacaoViews\ConsultaPlantacoes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\PlantacaoViews\ConsultaPlantacoes.Designer.cs">
+      <DependentUpon>ConsultaPlantacoes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\PlantacaoViews\InfAlteraAtividade.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\PlantacaoViews\InfAlteraAtividade.Designer.cs">
+      <DependentUpon>InfAlteraAtividade.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\PlantacaoViews\InfPlantacao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\PlantacaoViews\InfPlantacao.Designer.cs">
+      <DependentUpon>InfPlantacao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Sobre.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Sobre.Designer.cs">
+      <DependentUpon>Sobre.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Usuario\AbrirEditaUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Usuario\AbrirEditaUsuario.Designer.cs">
+      <DependentUpon>AbrirEditaUsuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Usuario\AlteraSenha.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Usuario\AlteraSenha.Designer.cs">
+      <DependentUpon>AlteraSenha.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Usuario\CadastroUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Usuario\CadastroUsuario.Designer.cs">
+      <DependentUpon>CadastroUsuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Usuario\ConsultaUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Usuario\ConsultaUsuario.Designer.cs">
+      <DependentUpon>ConsultaUsuario.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="View\AnaliseViews\CadastroAnalise.resx">
+      <DependentUpon>CadastroAnalise.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\AnaliseViews\ConsultaAnalise.resx">
+      <DependentUpon>ConsultaAnalise.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\AnaliseViews\InfAnalise.resx">
+      <DependentUpon>InfAnalise.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\AnotacaoViews\AbreEditaAnotacao.resx">
+      <DependentUpon>AbreEditaAnotacao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\AnotacaoViews\CadastroAnotacao.resx">
+      <DependentUpon>CadastroAnotacao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\AnotacaoViews\ConsultaAnotacao.resx">
+      <DependentUpon>ConsultaAnotacao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\DoencaViews\AbreEditaDoenca.resx">
+      <DependentUpon>AbreEditaDoenca.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\DoencaViews\AlteraLocais.resx">
+      <DependentUpon>AlteraLocais.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\DoencaViews\CadastroDoenca.resx">
+      <DependentUpon>CadastroDoenca.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\DoencaViews\ConsultaDoenca.resx">
+      <DependentUpon>ConsultaDoenca.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\DoencaViews\EscolhaLocais.resx">
+      <DependentUpon>EscolhaLocais.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\EspeciesViews\AbreEditaEspecie.resx">
+      <DependentUpon>AbreEditaEspecie.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\EspeciesViews\AlteraUtilidades.resx">
+      <DependentUpon>AlteraUtilidades.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\EspeciesViews\CadastroEspecie.resx">
+      <DependentUpon>CadastroEspecie.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\EspeciesViews\ConsultaEspecies.resx">
+      <DependentUpon>ConsultaEspecies.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\EspeciesViews\EscolhaUtilidades.resx">
+      <DependentUpon>EscolhaUtilidades.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\FerramentasViews\Adubacao.resx">
+      <DependentUpon>Adubacao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\FerramentasViews\Calagem.resx">
+      <DependentUpon>Calagem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\MenuPrincipal.resx">
+      <DependentUpon>MenuPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\PlantacaoViews\AdicionaAtividade.resx">
+      <DependentUpon>AdicionaAtividade.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\PlantacaoViews\AdicionaEspecie.resx">
+      <DependentUpon>AdicionaEspecie.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\PlantacaoViews\AlteraPlantacao.resx">
+      <DependentUpon>AlteraPlantacao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\PlantacaoViews\CadastroPlantacao.resx">
+      <DependentUpon>CadastroPlantacao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\PlantacaoViews\ConsultaAtividade.resx">
+      <DependentUpon>ConsultaAtividade.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\PlantacaoViews\ConsultaEspecies2.resx">
+      <DependentUpon>ConsultaEspecies2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\PlantacaoViews\ConsultaPlantacoes.resx">
+      <DependentUpon>ConsultaPlantacoes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\PlantacaoViews\InfAlteraAtividade.resx">
+      <DependentUpon>InfAlteraAtividade.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\PlantacaoViews\InfPlantacao.resx">
+      <DependentUpon>InfPlantacao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Sobre.resx">
+      <DependentUpon>Sobre.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Usuario\AbrirEditaUsuario.resx">
+      <DependentUpon>AbrirEditaUsuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Usuario\AlteraSenha.resx">
+      <DependentUpon>AlteraSenha.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Usuario\CadastroUsuario.resx">
+      <DependentUpon>CadastroUsuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Usuario\ConsultaUsuario.resx">
+      <DependentUpon>ConsultaUsuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fundoTela.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logoCalytus2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\login.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\usuario.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chave.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="logoCalytusIcon.ico" />
+    <None Include="Resources\eucaliptos.png" />
+    <None Include="Resources\restaurar.png" />
+    <None Include="Resources\resetar.png" />
+    <None Include="Resources\backup.png" />
+    <None Include="Resources\mais.png" />
+    <None Include="Resources\logoCalytus5.png" />
+    <None Include="Resources\doença.png" />
+    <None Include="Resources\adubo.png" />
+    <None Include="Resources\excluir.png" />
+    <None Include="Resources\atualizar.png" />
+    <None Include="Resources\INFORMACOES 2.jpg" />
+    <None Include="Resources\sobre.png" />
+    <None Include="Resources\editar.png" />
+    <None Include="Resources\consulta.png" />
+    <None Include="Resources\cadastro.png" />
+    <None Include="Resources\barra2.png" />
+    <None Include="Resources\barra.png" />
+    <None Include="Resources\logoCalytus4.png" />
+    <None Include="Resources\logoCalytus3.png" />
+    <None Include="Resources\eucalipto.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CalytusGestao.Controller\CalytusGestao.Controller.csproj">
+      <Project>{13cadabd-da4c-4db3-a4c7-87e97d0790ff}</Project>
+      <Name>CalytusGestao.Controller</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CalytusGestao.Model\CalytusGestao.Model.csproj">
+      <Project>{44ca84b4-7621-4435-b8a3-8c2426a19870}</Project>
+      <Name>CalytusGestao.Model</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

@@ -1,0 +1,5 @@
+C:\Users\Warley\documents\visual studio 2017\Projects\CalytusGestao\CalytusGestao.Model\bin\Release\CalytusGestao.Model.dll
+C:\Users\Warley\documents\visual studio 2017\Projects\CalytusGestao\CalytusGestao.Model\bin\Release\CalytusGestao.Model.pdb
+C:\Users\Warley\documents\visual studio 2017\Projects\CalytusGestao\CalytusGestao.Model\obj\Release\CalytusGestao.Model.dll
+C:\Users\Warley\documents\visual studio 2017\Projects\CalytusGestao\CalytusGestao.Model\obj\Release\CalytusGestao.Model.pdb
+C:\Users\Warley\documents\visual studio 2017\Projects\CalytusGestao\CalytusGestao.Model\bin\Release\system.data.sqlite.dll
